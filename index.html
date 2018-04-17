@@ -3,17 +3,26 @@
 	<body>
 		<h1>Hello World</h1>
 
-
+		
+<!--		<script>alert("Hello");</script> -->
+		
 		<script>
 		
-			var r = new XMLHttpRequest();
-			r.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
-			
-			r.onload = function() {
-				alert(r.responseText);
+			function f() {
+				var r = new XMLHttpRequest();
+				r.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
+				r.onload = function(){
+					var ourData = r.responseText;
+					alert(ourData[0]);
+				}
+				
+				r.send();
+				
 			}
+
+			alert("Hello");
 			
-			r.send();
+			f();
 			
 		</script>
 		
