@@ -23,7 +23,15 @@
 			}
 
 			function x() {
-				writefile("newFile.txt");
+		            var sw : StreamWriter = new StreamWriter("newfile.txt");
+			    sw.WriteLine("Line to write");
+			    sw.WriteLine("Another Line");
+			    sw.Flush();
+			    sw.Close();
+				
+			}
+			
+			function y() {
 				
 			}
 			
