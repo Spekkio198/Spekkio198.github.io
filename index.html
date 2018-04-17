@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<body>
+		<h1>Hello World</h1>
+
+
+		<script>
+		
+			var r = new XMLHttpRequest();
+			r.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
+			
+			r.onload = function() {
+				alert(r.responseText);
+			}
+			
+			r.send();
+			
+		</script>
+		
+
+	</body>
 </html>
