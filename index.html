@@ -10,10 +10,10 @@
 		
 			function f() {
 				var r = new XMLHttpRequest();
-				r.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
+				r.open('GET', 'https://spekkio198.github.io/food.txt');
 				r.onload = function(){
 					var ourData = r.responseText;
-					alert(ourData[0]);
+					alert(ourData[0] + ourData[1] + ourData[2]);
 				}
 				
 				r.send();
