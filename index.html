@@ -13,15 +13,20 @@
 				r.open('GET', 'https://spekkio198.github.io/food.txt');
 				r.onload = function(){
 					var ourData = r.responseText;
-					alert(ourData[0] + ourData[1] + ourData[2]);
+					alert(ourData[0]);
 				}
 				
 				r.send();
 				
 			}
-
-			alert("Hello");
 			
+			function w() {
+				var xhttp = new XMLHttpRequest();
+				xhttp.open("POST", "https://learnwebcode.github.io/json-example/animals-1.json");
+				xhttp.send("x");
+			}
+			
+			w();
 			f();
 			
 		</script>
